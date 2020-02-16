@@ -81,7 +81,7 @@ public class Main {
 
 	private static void testRecommender() {
 		System.out.println("-------------------");
-		Graph<Integer> g = Recommender.read("C://Users//Lenovo//Desktop//PA4//students-code/graph.txt");
+		Graph<Integer> g = Recommender.read("C://Users//Lenovo//Desktop/graph.txt");
 		{
 			PQK<Double, Integer> top = Recommender.recommendPop(g, 3, 4);
 			while (top.length() > 0) {
@@ -112,10 +112,6 @@ public class Main {
 		l.findFirst();
 		l.remove();
 		System.out.println(l.size()+"\n");
-/*
-		testPQK();
-		testMap();
-		testGraph();
-		testRecommender();*/
+
 	}
 }
